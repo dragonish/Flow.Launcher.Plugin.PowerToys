@@ -32,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Flow.Launcher.Localization" Version="0.0.5" />
     <PackageReference Include="Flow.Launcher.Plugin" Version="4.7.0" />
   </ItemGroup>
 
@@ -39,6 +40,18 @@
     <None Update="images\PowerToys.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+	<Content Include="Languages\**">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
+  </ItemGroup>
+
+  <ItemGroup>
+	<Content Update="Languages\en.xaml">
+		<Generator>MSBuild:Compile</Generator>
+	</Content>
+    <Content Update="Languages\zh-cn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
   </ItemGroup>
 
 </Project>

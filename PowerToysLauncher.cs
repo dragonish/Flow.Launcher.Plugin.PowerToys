@@ -70,8 +70,8 @@ public class PowerToysLauncher
         new PowerToysUtilityActionWithSettings
         {
             EventKey = Events.MeasureToolTriggerEvent,
-            Keywords = ["measure", "tool", "screen", "ruler"],
-            Title = "Screen Ruler",
+            Keywords = ["screen", "ruler", "measure", "tool"],
+            TitleKey = "screen_ruler",
             Icon = Icons.ScreenRuler,
             SettingsLinkName = "MeasureTool",
             SettingsEnabledNameOverride = "Measure Tool"
@@ -80,7 +80,7 @@ public class PowerToysLauncher
         {
             EventKey = Events.ShortcutGuideTriggerEvent,
             Keywords = ["shortcut", "guide"],
-            Title = "Shortcut Guide",
+            TitleKey = "shortcut_guide",
             Icon = Icons.ShortcutGuide,
             SettingsLinkName = "ShortcutGuide",
             SettingsEnabledNameOverride = "Shortcut Guide"
@@ -88,24 +88,24 @@ public class PowerToysLauncher
         new PowerToysUtilityActionWithSettings
         {
             EventKey = Events.ShowColorPickerSharedEvent,
-            Keywords = ["color", "colour", "picker"],
-            Title = "Show Color Picker",
+            Keywords = ["color", "picker"],
+            TitleKey = "color_picker",
             Icon = Icons.ColorPicker,
             SettingsLinkName = "ColorPicker"
         },
         new DelayedPowerToysUtilityAction
         {
             EventKey = Events.AlwaysOnTopPinEvent,
-            Keywords = ["pin", "always", "top"],
-            Title = "Pin Always On Top",
+            Keywords = ["always", "top", "pin"],
+            TitleKey = "always_on_top",
             Icon = Icons.AlwaysOnTop,
             SettingsLinkName = "AlwaysOnTop"
         },
         new PowerToysUtilityActionWithSettings
         {
             EventKey = Events.ShowPowerOcrEvent,
-            Keywords = ["ocr", "text", "extract"],
-            Title = "Extract Text",
+            Keywords = ["text", "extract", "ocr"],
+            TitleKey = "text_extractor",
             Icon = Icons.TextExtractor,
             SettingsLinkName = "PowerOcr",
             SettingsEnabledNameOverride = "TextExtractor"
@@ -114,7 +114,7 @@ public class PowerToysLauncher
         {
             EventKey = Events.FZEToggleEvent,
             Keywords = ["fancy", "zones"],
-            Title = "Fancy Zones Editor",
+            TitleKey = "fancy_zones",
             Icon = Icons.FancyZones,
             SettingsLinkName = "FancyZones"
         },
@@ -122,7 +122,7 @@ public class PowerToysLauncher
         {
             EventKey = Events.ShowHostsSharedEvent,
             Keywords = ["hosts"],
-            Title = "Hosts Editor",
+            TitleKey = "hosts_file_editor",
             Icon = Icons.Hosts,
             SettingsLinkName = "Hosts",
             RunAsAdminEventKey = Events.ShowHostsAdminEvent
@@ -131,7 +131,7 @@ public class PowerToysLauncher
         {
             EventKey = Events.RegistryPreviewTriggerEvent,
             Keywords = ["registry", "preview"],
-            Title = "Registry Preview",
+            TitleKey = "registry_preview",
             Icon = Icons.RegistryPreview,
             SettingsLinkName = "RegistryPreview"
         },
@@ -139,7 +139,7 @@ public class PowerToysLauncher
         {
             EventKey = Events.LaunchWorkspacesEditorEvent,
             Keywords = ["workspaces"],
-            Title = "Workspaces Editor",
+            TitleKey = "workspaces",
             Icon = Icons.Workspaces,
             SettingsLinkName = "Workspaces"
         },
@@ -147,7 +147,7 @@ public class PowerToysLauncher
         {
             EventKey = Events.CropAndLockReparentEvent,
             Keywords = ["crop", "lock", "reparent"],
-            Title = "Crop And Lock - Reparent",
+            TitleKey = "crop_and_lock_reparent",
             Icon = Icons.CropAndLock,
             SettingsLinkName = "CropAndLock"
         },
@@ -155,15 +155,15 @@ public class PowerToysLauncher
         {
             EventKey = Events.CropAndLockThumbnailEvent,
             Keywords = ["crop", "lock", "thumbnail"],
-            Title = "Crop And Lock - Thumbnail",
+            TitleKey = "crop_and_lock_thumbnail",
             Icon = Icons.CropAndLock,
             SettingsLinkName = "CropAndLock"
         },
         new PowerToysUtilityActionWithAsAdmin
         {
             EventKey = Events.ShowEnvironmentVariablesSharedEvent,
-            Keywords = ["environment", "variable"],
-            Title = "Environment Variables",
+            Keywords = ["environment", "variables"],
+            TitleKey = "environment_variables",
             Icon = Icons.EnvironmentVariables,
             SettingsLinkName = "EnvironmentVariables",
             RunAsAdminEventKey = Events.ShowEnvironmentVarablesAdminEvent
@@ -173,7 +173,7 @@ public class PowerToysLauncher
             Icon = Icons.PowerToys,
             Keywords = ["settings"],
             SettingsLinkName = "PowerToys",
-            Title = "Open PowerToys Settings"
+            TitleKey = "settings"
         }
     ];
 }
