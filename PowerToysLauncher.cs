@@ -23,24 +23,6 @@ public static class Events
     public const string LaunchWorkspacesEditorEvent = "Local\\Workspaces-LaunchEditorEvent-a55ff427-cf62-4994-a2cd-9f72139296bf";
 }
 
-public static class Icons
-{
-    public const string BasePath =
-        "https://cdn.jsdelivr.net/gh/microsoft/PowerToys/src/settings-ui/Settings.UI/Assets/Settings/Icons/";
-    public const string AdvancedPaste = BasePath + "AdvancedPaste.png";
-    public const string ColorPicker = BasePath + "ColorPicker.png";
-    public const string Hosts = BasePath + "Hosts.png";
-    public const string FancyZones = BasePath + "FancyZones.png";
-    public const string AlwaysOnTop = BasePath + "AlwaysOnTop.png";
-    public const string ScreenRuler = BasePath + "ScreenRuler.png";
-    public const string ShortcutGuide = BasePath + "ShortcutGuide.png";
-    public const string TextExtractor = BasePath + "TextExtractor.png";
-    public const string PowerToys = BasePath + "PowerToys.png";
-    public const string EnvironmentVariables = BasePath + "EnvironmentVariables.png";
-    public const string CropAndLock = BasePath + "CropAndLock.png";
-    public const string RegistryPreview = BasePath + "RegistryPreview.png";
-    public const string Workspaces = BasePath + "Workspaces.png";
-}
 public class PowerToysLauncher
 {
     public IEnumerable<IAction> EnabledActions => Actions.Where(ActionEnabled);
@@ -72,7 +54,7 @@ public class PowerToysLauncher
             EventKey = Events.MeasureToolTriggerEvent,
             Keywords = ["screen", "ruler", "measure", "tool"],
             TitleKey = "screen_ruler",
-            Icon = Icons.ScreenRuler,
+            Icon = "ScreenRuler.png",
             SettingsLinkName = "MeasureTool",
             SettingsEnabledNameOverride = "Measure Tool"
         },
@@ -81,7 +63,7 @@ public class PowerToysLauncher
             EventKey = Events.ShortcutGuideTriggerEvent,
             Keywords = ["shortcut", "guide"],
             TitleKey = "shortcut_guide",
-            Icon = Icons.ShortcutGuide,
+            Icon = "ShortcutGuide.png",
             SettingsLinkName = "ShortcutGuide",
             SettingsEnabledNameOverride = "Shortcut Guide"
         },
@@ -90,7 +72,7 @@ public class PowerToysLauncher
             EventKey = Events.ShowColorPickerSharedEvent,
             Keywords = ["color", "picker"],
             TitleKey = "color_picker",
-            Icon = Icons.ColorPicker,
+            Icon = "ColorPicker.png",
             SettingsLinkName = "ColorPicker"
         },
         new DelayedPowerToysUtilityAction
@@ -98,7 +80,7 @@ public class PowerToysLauncher
             EventKey = Events.AlwaysOnTopPinEvent,
             Keywords = ["always", "top", "pin"],
             TitleKey = "always_on_top",
-            Icon = Icons.AlwaysOnTop,
+            Icon = "AlwaysOnTop.png",
             SettingsLinkName = "AlwaysOnTop"
         },
         new PowerToysUtilityActionWithSettings
@@ -106,7 +88,7 @@ public class PowerToysLauncher
             EventKey = Events.ShowPowerOcrEvent,
             Keywords = ["text", "extract", "ocr"],
             TitleKey = "text_extractor",
-            Icon = Icons.TextExtractor,
+            Icon = "TextExtractor.png",
             SettingsLinkName = "PowerOcr",
             SettingsEnabledNameOverride = "TextExtractor"
         },
@@ -115,7 +97,7 @@ public class PowerToysLauncher
             EventKey = Events.FZEToggleEvent,
             Keywords = ["fancy", "zones"],
             TitleKey = "fancy_zones",
-            Icon = Icons.FancyZones,
+            Icon = "FancyZones.png",
             SettingsLinkName = "FancyZones"
         },
         new PowerToysUtilityActionWithAsAdmin
@@ -123,7 +105,7 @@ public class PowerToysLauncher
             EventKey = Events.ShowHostsSharedEvent,
             Keywords = ["hosts"],
             TitleKey = "hosts_file_editor",
-            Icon = Icons.Hosts,
+            Icon = "Hosts.png",
             SettingsLinkName = "Hosts",
             RunAsAdminEventKey = Events.ShowHostsAdminEvent
         },
@@ -132,7 +114,7 @@ public class PowerToysLauncher
             EventKey = Events.RegistryPreviewTriggerEvent,
             Keywords = ["registry", "preview"],
             TitleKey = "registry_preview",
-            Icon = Icons.RegistryPreview,
+            Icon = "RegistryPreview.png",
             SettingsLinkName = "RegistryPreview"
         },
         new PowerToysUtilityActionWithSettings
@@ -140,7 +122,7 @@ public class PowerToysLauncher
             EventKey = Events.LaunchWorkspacesEditorEvent,
             Keywords = ["workspaces"],
             TitleKey = "workspaces",
-            Icon = Icons.Workspaces,
+            Icon = "Workspaces.png",
             SettingsLinkName = "Workspaces"
         },
         new DelayedPowerToysUtilityAction
@@ -148,7 +130,7 @@ public class PowerToysLauncher
             EventKey = Events.CropAndLockReparentEvent,
             Keywords = ["crop", "lock", "reparent"],
             TitleKey = "crop_and_lock_reparent",
-            Icon = Icons.CropAndLock,
+            Icon = "CropAndLock.png",
             SettingsLinkName = "CropAndLock"
         },
         new DelayedPowerToysUtilityAction
@@ -156,7 +138,7 @@ public class PowerToysLauncher
             EventKey = Events.CropAndLockThumbnailEvent,
             Keywords = ["crop", "lock", "thumbnail"],
             TitleKey = "crop_and_lock_thumbnail",
-            Icon = Icons.CropAndLock,
+            Icon = "CropAndLock.png",
             SettingsLinkName = "CropAndLock"
         },
         new PowerToysUtilityActionWithAsAdmin
@@ -164,13 +146,13 @@ public class PowerToysLauncher
             EventKey = Events.ShowEnvironmentVariablesSharedEvent,
             Keywords = ["environment", "variables"],
             TitleKey = "environment_variables",
-            Icon = Icons.EnvironmentVariables,
+            Icon = "EnvironmentVariables.png",
             SettingsLinkName = "EnvironmentVariables",
             RunAsAdminEventKey = Events.ShowEnvironmentVarablesAdminEvent
         },
         new OpenPowerToysSettingsAction
         {
-            Icon = Icons.PowerToys,
+            Icon = "PowerToys.png",
             Keywords = ["settings"],
             SettingsLinkName = "PowerToys",
             TitleKey = "settings"

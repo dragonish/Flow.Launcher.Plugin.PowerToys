@@ -1,3 +1,5 @@
+using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -43,7 +45,7 @@ public class PowerToys : IAsyncPlugin, IContextMenu, IAsyncReloadable, IPluginI1
             Action =  _ =>  { action.Execute(); return true; },
             Title = GetTranslation(action.TitleKey),
             SubTitle = action.Keywords.Any() ? GetTranslation("keywords") + ": " + string.Join(" ", action.Keywords) : string.Empty,
-            IcoPath = action.Icon,
+            IcoPath = GetIconPath(action.Icon),
             ContextData = action
         };
     }
@@ -72,5 +74,23 @@ public class PowerToys : IAsyncPlugin, IContextMenu, IAsyncReloadable, IPluginI1
     public string GetTranslation(string key)
     {
         return _context.API.GetTranslation(key);
+    }
+
+    private string GetIconPath(string iconName)
+    {
+        var relativePath = "PowerToys\\WinUI3Apps\\Assets\\Settings\\Icons\\" + iconName;
+        var iconPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), relativePath);
+
+        if (!File.Exists(iconPath))
+        {
+            iconPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), relativePath);
+        }
+
+        if (!File.Exists(iconPath))
+        {
+            return "https://cdn.jsdelivr.net/gh/microsoft/PowerToys/src/settings-ui/Settings.UI/Assets/Settings/Icons/" + iconName;
+        }
+
+        return iconPath;
     }
 }
