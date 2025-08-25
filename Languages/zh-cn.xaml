@@ -8,7 +8,7 @@
 	<system:String x:Key="powertoys_not_running_subtitle">确保在使用此插件前已安装并运行了 PowerToys。</system:String>
 	<system:String x:Key="open_settings">打开此实用工具的设置</system:String>
 	<system:String x:Key="run_as_administrator">以管理员身份运行</system:String>
-	<system:String x:Key="keywords">关键词:</system:String>
+	<system:String x:Key="keywords">关键词</system:String>
 	<system:String x:Key="settings">打开 PowerToys 设置</system:String>
 	<system:String x:Key="screen_ruler">屏幕标尺</system:String>
 	<system:String x:Key="shortcut_guide">快捷键指南</system:String>

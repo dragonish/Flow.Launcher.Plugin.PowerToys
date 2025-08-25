@@ -8,7 +8,7 @@
 	<system:String x:Key="powertoys_not_running_subtitle">Make sure PowerToys is installed and running before using this plugin.</system:String>
 	<system:String x:Key="open_settings">Open Settings for this Utility</system:String>
 	<system:String x:Key="run_as_administrator">Run as Administrator</system:String>
-	<system:String x:Key="keywords">Keywords:</system:String>
+	<system:String x:Key="keywords">Keywords</system:String>
 	<system:String x:Key="settings">Open PowerToys Settings</system:String>
 	<system:String x:Key="screen_ruler">Screen Ruler</system:String>
 	<system:String x:Key="shortcut_guide">Shortcut Guide</system:String>
