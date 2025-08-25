@@ -7,6 +7,8 @@ namespace Flow.Launcher.Plugin.PowerToys;
 
 public static class Events
 {
+    public const string PowerToysRunInvokeEvent = "Local\\PowerToysRunInvokeEvent-30f26ad7-d36d-4c0e-ab02-68bb5ff3c4ab";
+    public const string ShowPowerToysCmdPalEvent = "Local\\PowerToysCmdPal-ShowEvent-62336fcd-8611-4023-9b30-091a6af4cc5a";
     public const string ShowColorPickerSharedEvent = "Local\\ShowColorPickerEvent-8c46be2a-3e05-4186-b56b-4ae986ef2525";
     public const string FZEToggleEvent = "Local\\FancyZones-ToggleEditorEvent-1e174338-06a3-472b-874d-073b21c62f14";
     public const string ShowHostsSharedEvent = "Local\\Hosts-ShowHostsEvent-5a0c0aae-5ff5-40f5-95c2-20e37ed671f0";
@@ -21,6 +23,7 @@ public static class Events
     public const string AlwaysOnTopPinEvent = "Local\\AlwaysOnTopPinEvent-892e0aa2-cfa8-4cc4-b196-ddeb32314ce8";
     public const string ShowPowerOcrEvent = "Local\\PowerOCREvent-dc864e06-e1af-4ecc-9078-f98bee745e3a";
     public const string LaunchWorkspacesEditorEvent = "Local\\Workspaces-LaunchEditorEvent-a55ff427-cf62-4994-a2cd-9f72139296bf";
+    public const string PowerToysAwakeExitEvent = "Local\\PowerToysAwakeExitEvent-c0d5e305-35fc-4fb5-83ec-f6070cfaf7fe";
 }
 
 public class PowerToysLauncher
@@ -149,6 +152,31 @@ public class PowerToysLauncher
             Icon = "EnvironmentVariables.png",
             SettingsLinkName = "EnvironmentVariables",
             RunAsAdminEventKey = Events.ShowEnvironmentVarablesAdminEvent
+        },
+        new PowerToysUtilityActionWithSettings
+        {
+            EventKey = Events.PowerToysRunInvokeEvent,
+            Keywords = ["powertoys", "run"],
+            TitleKey = "powertoys_run",
+            Icon = "PowerToysRun.png",
+            SettingsLinkName = "Run",
+            SettingsEnabledNameOverride = "PowerToys Run",
+        },
+        new PowerToysUtilityActionWithSettings
+        {
+            EventKey = Events.ShowPowerToysCmdPalEvent,
+            Keywords = ["command", "palette", "cmd"],
+            TitleKey = "command_palette",
+            Icon = "CmdPal.png",
+            SettingsLinkName = "CmdPal",
+        },
+        new PowerToysUtilityActionWithSettings
+        {
+            EventKey = Events.PowerToysAwakeExitEvent,
+            Keywords = ["exit", "awake"],
+            TitleKey = "awake_exit",
+            Icon = "Awake.png",
+            SettingsLinkName = "Awake",
         },
         new OpenPowerToysSettingsAction
         {

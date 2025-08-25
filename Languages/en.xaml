@@ -22,4 +22,7 @@
 	<system:String x:Key="crop_and_lock_reparent">Crop And Lock - Reparent</system:String>
 	<system:String x:Key="crop_and_lock_thumbnail">Crop And Lock - Thumbnail</system:String>
 	<system:String x:Key="environment_variables">Environment Variables</system:String>
+	<system:String x:Key="powertoys_run">PowerToys Run</system:String>
+	<system:String x:Key="command_palette">Show Command Palette</system:String>
+	<system:String x:Key="awake_exit">Exit Awake</system:String>
 </ResourceDictionary>
