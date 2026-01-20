@@ -18,12 +18,19 @@ public static class Events
     public const string RegistryPreviewTriggerEvent = "Local\\RegistryPreviewEvent-4C559468-F75A-4E7F-BC4F-9C9688316687";
     public const string CropAndLockThumbnailEvent = "Local\\PowerToysCropAndLockThumbnailEvent-1637be50-da72-46b2-9220-b32b206b2434";
     public const string CropAndLockReparentEvent = "Local\\PowerToysCropAndLockReparentEvent-6060860a-76a1-44e8-8d0e-6355785e9c36";
+    public const string CropAndLockScreenshotEvent = "Local\\PowerToysCropAndLockScreenshotEvent-ff077ab2-8360-4bd1-864a-637389d35593";
     public const string ShowEnvironmentVariablesSharedEvent = "Local\\PowerToysEnvironmentVariables-ShowEnvironmentVariablesEvent-1021f616-e951-4d64-b231-a8f972159978";
     public const string ShowEnvironmentVarablesAdminEvent = "Local\\PowerToysEnvironmentVariables-EnvironmentVariablesAdminEvent-8c95d2ad-047c-49a2-9e8b-b4656326cfb2";
     public const string AlwaysOnTopPinEvent = "Local\\AlwaysOnTopPinEvent-892e0aa2-cfa8-4cc4-b196-ddeb32314ce8";
     public const string ShowPowerOcrEvent = "Local\\PowerOCREvent-dc864e06-e1af-4ecc-9078-f98bee745e3a";
     public const string LaunchWorkspacesEditorEvent = "Local\\Workspaces-LaunchEditorEvent-a55ff427-cf62-4994-a2cd-9f72139296bf";
     public const string PowerToysAwakeExitEvent = "Local\\PowerToysAwakeExitEvent-c0d5e305-35fc-4fb5-83ec-f6070cfaf7fe";
+    public const string AdvancedPasteShowUIEvent = "Local\\PowerToys_AdvancedPaste_ShowUI";
+    public const string FindMyMouseTriggerEvent = "Local\\FindMyMouseTriggerEvent-5a9dc5f4-1c74-4f2f-a66f-1b9b6a2f9b23";
+    public const string MouseHighlighterTriggerEvent = "Local\\MouseHighlighterTriggerEvent-1e3c9c3d-3fdf-4f9a-9a52-31c9b3c3a8f4";
+    public const string MouseCrosshairsTriggerEvent = "Local\\MouseCrosshairsTriggerEvent-0d4c7f92-0a5c-4f5c-b64b-8a2a2f7e0b21";
+    public const string CursorWrapTriggerEvent = "Local\\CursorWrapTriggerEvent-1f8452b5-4e6e-45b3-8b09-13f14a5900c9";
+    public const string LightSwitchToggleEvent = "Local\\PowerToys-LightSwitch-ToggleEvent-d8dc2f29-8c94-4ca1-8c5f-3e2b1e3c4f5a";
 }
 
 public class PowerToysLauncher
@@ -144,6 +151,14 @@ public class PowerToysLauncher
             Icon = "CropAndLock.png",
             SettingsLinkName = "CropAndLock"
         },
+        new DelayedPowerToysUtilityAction
+        {
+            EventKey = Events.CropAndLockScreenshotEvent,
+            Keywords = ["crop", "lock", "screenshot"],
+            TitleKey = "crop_and_lock_screenshot",
+            Icon = "CropAndLock.png",
+            SettingsLinkName = "CropAndLock"
+        },
         new PowerToysUtilityActionWithAsAdmin
         {
             EventKey = Events.ShowEnvironmentVariablesSharedEvent,
@@ -177,6 +192,52 @@ public class PowerToysLauncher
             TitleKey = "awake_exit",
             Icon = "Awake.png",
             SettingsLinkName = "Awake",
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.AdvancedPasteShowUIEvent,
+             Keywords = ["advanced", "paste"],
+             TitleKey = "advanced_paste_show_ui",
+             Icon = "AdvancedPaste.png",
+             SettingsLinkName = "AdvancedPaste"
+        },
+        new DelayedPowerToysUtilityAction {
+             EventKey = Events.FindMyMouseTriggerEvent,
+             Keywords = ["find", "mouse"],
+             TitleKey = "find_my_mouse",
+             Icon = "FindMyMouse.png",
+             SettingsLinkName = "MouseUtils",
+             SettingsEnabledNameOverride = "FindMyMouse"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.MouseHighlighterTriggerEvent,
+             Keywords = ["mouse", "highlighter"],
+             TitleKey = "mouse_highlighter",
+             Icon = "MouseHighlighter.png",
+             SettingsLinkName = "MouseUtils",
+             SettingsEnabledNameOverride = "MouseHighlighter"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.MouseCrosshairsTriggerEvent,
+             Keywords = ["mouse", "crosshairs"],
+             TitleKey = "mouse_crosshairs",
+             Icon = "MouseCrosshairs.png",
+             SettingsLinkName = "MouseUtils",
+             SettingsEnabledNameOverride = "MousePointerCrosshairs"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.CursorWrapTriggerEvent,
+             Keywords = ["cursor", "wrap"],
+             TitleKey = "cursor_wrap",
+             Icon = "CursorWrap.png",
+             SettingsLinkName = "MouseUtils",
+             SettingsEnabledNameOverride = "CursorWrap"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.LightSwitchToggleEvent,
+             Keywords = ["light", "dark", "theme", "switch"],
+             TitleKey = "light_switch_toggle",
+             Icon = "LightSwitch.png",
+             SettingsLinkName = "LightSwitch"
         },
         new OpenPowerToysSettingsAction
         {

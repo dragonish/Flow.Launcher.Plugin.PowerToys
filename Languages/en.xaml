@@ -21,8 +21,15 @@
 	<system:String x:Key="workspaces">Workspaces Editor</system:String>
 	<system:String x:Key="crop_and_lock_reparent">Crop And Lock - Reparent</system:String>
 	<system:String x:Key="crop_and_lock_thumbnail">Crop And Lock - Thumbnail</system:String>
+    <system:String x:Key="crop_and_lock_screenshot">Crop And Lock - Screenshot</system:String>
 	<system:String x:Key="environment_variables">Environment Variables</system:String>
 	<system:String x:Key="powertoys_run">PowerToys Run</system:String>
 	<system:String x:Key="command_palette">Show Command Palette</system:String>
 	<system:String x:Key="awake_exit">Exit Awake</system:String>
+    <system:String x:Key="advanced_paste_show_ui">Show Advanced Paste UI</system:String>
+    <system:String x:Key="find_my_mouse">Find My Mouse</system:String>
+    <system:String x:Key="mouse_highlighter">Mouse Highlighter</system:String>
+    <system:String x:Key="mouse_crosshairs">Mouse Crosshairs</system:String>
+    <system:String x:Key="cursor_wrap">Cursor Wrap</system:String>
+    <system:String x:Key="light_switch_toggle">Light Switch Toggle</system:String>
 </ResourceDictionary>

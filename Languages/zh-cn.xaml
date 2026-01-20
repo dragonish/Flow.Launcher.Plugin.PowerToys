@@ -21,8 +21,15 @@
 	<system:String x:Key="workspaces">工作区编辑器</system:String>
 	<system:String x:Key="crop_and_lock_reparent">窗口裁剪器 - 重定父级</system:String>
 	<system:String x:Key="crop_and_lock_thumbnail">窗口裁剪器 - 缩略图</system:String>
+    <system:String x:Key="crop_and_lock_screenshot">窗口裁剪器 - 截图</system:String>
 	<system:String x:Key="environment_variables">环境变量</system:String>
 	<system:String x:Key="powertoys_run">PowerToys Run</system:String>
 	<system:String x:Key="command_palette">显示命令面板</system:String>
 	<system:String x:Key="awake_exit">退出唤醒</system:String>
+    <system:String x:Key="advanced_paste_show_ui">显示高级粘贴窗口</system:String>
+    <system:String x:Key="find_my_mouse">查找我的鼠标</system:String>
+    <system:String x:Key="mouse_highlighter">鼠标荧光笔</system:String>
+    <system:String x:Key="mouse_crosshairs">鼠标指针十字线</system:String>
+    <system:String x:Key="cursor_wrap">指针环绕</system:String>
+    <system:String x:Key="light_switch_toggle">切换主题</system:String>
 </ResourceDictionary>
