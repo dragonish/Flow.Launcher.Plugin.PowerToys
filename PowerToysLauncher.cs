@@ -22,6 +22,8 @@ public static class Events
     public const string ShowEnvironmentVariablesSharedEvent = "Local\\PowerToysEnvironmentVariables-ShowEnvironmentVariablesEvent-1021f616-e951-4d64-b231-a8f972159978";
     public const string ShowEnvironmentVarablesAdminEvent = "Local\\PowerToysEnvironmentVariables-EnvironmentVariablesAdminEvent-8c95d2ad-047c-49a2-9e8b-b4656326cfb2";
     public const string AlwaysOnTopPinEvent = "Local\\AlwaysOnTopPinEvent-892e0aa2-cfa8-4cc4-b196-ddeb32314ce8";
+    public const string AlwaysOnTopIncreaseOpacityEvent = "Local\\AlwaysOnTopIncreaseOpacityEvent-a1b2c3d4-e5f6-7890-abcd-ef1234567890";
+    public const string AlwaysOnTopDecreaseOpacityEvent = "Local\\AlwaysOnTopDecreaseOpacityEvent-b2c3d4e5-f6a7-8901-bcde-f12345678901";
     public const string ShowPowerOcrEvent = "Local\\PowerOCREvent-dc864e06-e1af-4ecc-9078-f98bee745e3a";
     public const string LaunchWorkspacesEditorEvent = "Local\\Workspaces-LaunchEditorEvent-a55ff427-cf62-4994-a2cd-9f72139296bf";
     public const string PowerToysAwakeExitEvent = "Local\\PowerToysAwakeExitEvent-c0d5e305-35fc-4fb5-83ec-f6070cfaf7fe";
@@ -89,7 +91,23 @@ public class PowerToysLauncher
         {
             EventKey = Events.AlwaysOnTopPinEvent,
             Keywords = ["always", "top", "pin"],
-            TitleKey = "always_on_top",
+            TitleKey = "always_on_top_pin",
+            Icon = "AlwaysOnTop.png",
+            SettingsLinkName = "AlwaysOnTop"
+        },
+        new PowerToysUtilityActionWithSettings
+        {
+            EventKey = Events.AlwaysOnTopIncreaseOpacityEvent,
+            Keywords = ["always", "top", "increase", "opacity"],
+            TitleKey = "always_on_top_increase_opacity",
+            Icon = "AlwaysOnTop.png",
+            SettingsLinkName = "AlwaysOnTop"
+        },
+        new PowerToysUtilityActionWithSettings
+        {
+            EventKey = Events.AlwaysOnTopDecreaseOpacityEvent,
+            Keywords = ["always", "top", "decrease", "opacity"],
+            TitleKey = "always_on_top_decrease_opacity",
             Icon = "AlwaysOnTop.png",
             SettingsLinkName = "AlwaysOnTop"
         },

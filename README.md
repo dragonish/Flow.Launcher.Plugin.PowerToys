@@ -11,7 +11,7 @@ Heavily based on / inspired by the similar plugin for PowerToys Run.
 - Measure Tool
 - Shortcut Guide
 - Color Picker
-- Pin Always on Top
+- Always on Top
 - Extract Text
 - Fancy Zones Editor
 - Hosts Editor

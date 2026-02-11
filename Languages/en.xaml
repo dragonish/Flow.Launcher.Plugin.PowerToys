@@ -13,7 +13,9 @@
 	<system:String x:Key="screen_ruler">Screen Ruler</system:String>
 	<system:String x:Key="shortcut_guide">Shortcut Guide</system:String>
 	<system:String x:Key="color_picker">Show Color Picker</system:String>
-	<system:String x:Key="always_on_top">Pin Always On Top</system:String>
+	<system:String x:Key="always_on_top_pin">Pin Always On Top</system:String>
+    <system:String x:Key="always_on_top_increase_opacity">Increases Opacity Of Top Window Border</system:String>
+    <system:String x:Key="always_on_top_decrease_opacity">Decrease Opacity Of Top Window Border</system:String>
 	<system:String x:Key="text_extractor">Extract Text</system:String>
 	<system:String x:Key="fancy_zones">Fancy Zones Editor</system:String>
 	<system:String x:Key="hosts_file_editor">Hosts File Editor</system:String>
