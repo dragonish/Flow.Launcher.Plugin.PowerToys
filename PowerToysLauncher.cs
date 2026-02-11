@@ -33,6 +33,8 @@ public static class Events
     public const string MouseCrosshairsTriggerEvent = "Local\\MouseCrosshairsTriggerEvent-0d4c7f92-0a5c-4f5c-b64b-8a2a2f7e0b21";
     public const string CursorWrapTriggerEvent = "Local\\CursorWrapTriggerEvent-1f8452b5-4e6e-45b3-8b09-13f14a5900c9";
     public const string LightSwitchToggleEvent = "Local\\PowerToys-LightSwitch-ToggleEvent-d8dc2f29-8c94-4ca1-8c5f-3e2b1e3c4f5a";
+    public const string LightSwitchLightThemeEvent = "Local\\PowerToysLightSwitch-LightThemeEvent-50077121-2ffc-4841-9c86-ab1bd3f9baca";
+    public const string LightSwitchDarkThemeEvent = "Local\\PowerToysLightSwitch-DarkThemeEvent-b3a835c0-eaa2-49b0-b8eb-f793e3df3368";
     public const string ZoomItRefreshSettingsEvent = "Local\\PowerToysZoomIt-RefreshSettingsEvent-f053a563-d519-4b0d-8152-a54489c13324";
     public const string ZoomItExitEvent = "Local\\PowerToysZoomIt-ExitEvent-36641ce6-df02-4eac-abea-a3fbf9138220";
     public const string ZoomItZoomEvent = "Local\\PowerToysZoomIt-ZoomEvent-1e4190d7-94bc-4ad5-adc0-9a8fd07cb393";
@@ -260,8 +262,22 @@ public class PowerToysLauncher
         },
         new PowerToysUtilityActionWithSettings {
              EventKey = Events.LightSwitchToggleEvent,
-             Keywords = ["light", "dark", "theme", "switch"],
+             Keywords = ["light", "switch", "toggle", "theme"],
              TitleKey = "light_switch_toggle",
+             Icon = "LightSwitch.png",
+             SettingsLinkName = "LightSwitch"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.LightSwitchLightThemeEvent,
+             Keywords = ["light", "switch", "light", "theme"],
+             TitleKey = "light_switch_light_theme",
+             Icon = "LightSwitch.png",
+             SettingsLinkName = "LightSwitch"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.LightSwitchDarkThemeEvent,
+             Keywords = ["light", "switch", "dark", "theme"],
+             TitleKey = "light_switch_dark_theme",
              Icon = "LightSwitch.png",
              SettingsLinkName = "LightSwitch"
         },

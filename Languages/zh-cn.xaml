@@ -34,6 +34,8 @@
     <system:String x:Key="mouse_crosshairs">鼠标指针十字线</system:String>
     <system:String x:Key="cursor_wrap">指针环绕</system:String>
     <system:String x:Key="light_switch_toggle">切换主题</system:String>
+    <system:String x:Key="light_switch_light_theme">切换到浅色主题</system:String>
+    <system:String x:Key="light_switch_dark_theme">切换到深色主题</system:String>
     <system:String x:Key="zoomit_refresh_settings">ZoomIt 刷新设置</system:String>
     <system:String x:Key="zoomit_exit">ZoomIt 退出</system:String>
     <system:String x:Key="zoomit_zoom">ZoomIt 缩放</system:String>

@@ -34,6 +34,8 @@
     <system:String x:Key="mouse_crosshairs">Mouse Crosshairs</system:String>
     <system:String x:Key="cursor_wrap">Cursor Wrap</system:String>
     <system:String x:Key="light_switch_toggle">Light Switch Toggle</system:String>
+    <system:String x:Key="light_switch_light_theme">Switch To Light Theme</system:String>
+    <system:String x:Key="light_switch_dark_theme">Switch To Dark Theme</system:String>
     <system:String x:Key="zoomit_refresh_settings">ZoomIt Refresh Settings</system:String>
     <system:String x:Key="zoomit_exit">ZoomIt Exit</system:String>
     <system:String x:Key="zoomit_zoom">ZoomIt Zoom</system:String>
