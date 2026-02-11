@@ -28,6 +28,7 @@ Heavily based on / inspired by the similar plugin for PowerToys Run.
 - Mouse Crosshairs
 - Cursor Wrap
 - Light Switch Toggle
+- ZoomIt
 - PowerToys Settings
 
 ## Other Features

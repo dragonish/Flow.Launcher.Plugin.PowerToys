@@ -34,4 +34,12 @@
     <system:String x:Key="mouse_crosshairs">Mouse Crosshairs</system:String>
     <system:String x:Key="cursor_wrap">Cursor Wrap</system:String>
     <system:String x:Key="light_switch_toggle">Light Switch Toggle</system:String>
+    <system:String x:Key="zoomit_refresh_settings">ZoomIt Refresh Settings</system:String>
+    <system:String x:Key="zoomit_exit">ZoomIt Exit</system:String>
+    <system:String x:Key="zoomit_zoom">ZoomIt Zoom</system:String>
+    <system:String x:Key="zoomit_draw">ZoomIt Draw</system:String>
+    <system:String x:Key="zoomit_break">ZoomIt Break</system:String>
+    <system:String x:Key="zoomit_live_zoom">ZoomIt Live Zoom</system:String>
+    <system:String x:Key="zoomit_snip">ZoomIt Snip</system:String>
+    <system:String x:Key="zoomit_record">ZoomIt Record</system:String>
 </ResourceDictionary>

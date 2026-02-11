@@ -33,6 +33,14 @@ public static class Events
     public const string MouseCrosshairsTriggerEvent = "Local\\MouseCrosshairsTriggerEvent-0d4c7f92-0a5c-4f5c-b64b-8a2a2f7e0b21";
     public const string CursorWrapTriggerEvent = "Local\\CursorWrapTriggerEvent-1f8452b5-4e6e-45b3-8b09-13f14a5900c9";
     public const string LightSwitchToggleEvent = "Local\\PowerToys-LightSwitch-ToggleEvent-d8dc2f29-8c94-4ca1-8c5f-3e2b1e3c4f5a";
+    public const string ZoomItRefreshSettingsEvent = "Local\\PowerToysZoomIt-RefreshSettingsEvent-f053a563-d519-4b0d-8152-a54489c13324";
+    public const string ZoomItExitEvent = "Local\\PowerToysZoomIt-ExitEvent-36641ce6-df02-4eac-abea-a3fbf9138220";
+    public const string ZoomItZoomEvent = "Local\\PowerToysZoomIt-ZoomEvent-1e4190d7-94bc-4ad5-adc0-9a8fd07cb393";
+    public const string ZoomItDrawEvent = "Local\\PowerToysZoomIt-DrawEvent-56338997-404d-4549-bd9a-d132b6766975";
+    public const string ZoomItBreakEvent = "Local\\PowerToysZoomIt-BreakEvent-17f2e63c-4c56-41dd-90a0-2d12f9f50c6b";
+    public const string ZoomItLiveZoomEvent = "Local\\PowerToysZoomIt-LiveZoomEvent-390bf0c7-616f-47dc-bafe-a2d228add20d";
+    public const string ZoomItSnipEvent = "Local\\PowerToysZoomIt-SnipEvent-2fd9c211-436d-4f17-a902-2528aaae3e30";
+    public const string ZoomItRecordEvent = "Local\\PowerToysZoomIt-RecordEvent-74539344-eaad-4711-8e83-23946e424512";
 }
 
 public class PowerToysLauncher
@@ -58,7 +66,7 @@ public class PowerToysLauncher
             _ => true
         };
     }
-    
+
     private static IAction[] Actions =
     [
         new PowerToysUtilityActionWithSettings
@@ -257,6 +265,62 @@ public class PowerToysLauncher
              Icon = "LightSwitch.png",
              SettingsLinkName = "LightSwitch"
         },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItRefreshSettingsEvent,
+             Keywords = ["zoomit", "refresh", "settings"],
+             TitleKey = "zoomit_refresh_settings",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItExitEvent,
+             Keywords = ["zoomit", "exit"],
+             TitleKey = "zoomit_exit",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItZoomEvent,
+             Keywords = ["zoomit", "zoom"],
+             TitleKey = "zoomit_zoom",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItDrawEvent,
+             Keywords = ["zoomit", "draw"],
+             TitleKey = "zoomit_draw",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItBreakEvent,
+             Keywords = ["zoomit", "break"],
+             TitleKey = "zoomit_break",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItLiveZoomEvent,
+             Keywords = ["zoomit", "live", "zoom"],
+             TitleKey = "zoomit_live_zoom",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItSnipEvent,
+             Keywords = ["zoomit", "snip"],
+             TitleKey = "zoomit_snip",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItRecordEvent,
+             Keywords = ["zoomit", "record"],
+             TitleKey = "zoomit_record",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
         new OpenPowerToysSettingsAction
         {
             Icon = "PowerToys.png",
@@ -266,4 +330,3 @@ public class PowerToysLauncher
         }
     ];
 }
-
