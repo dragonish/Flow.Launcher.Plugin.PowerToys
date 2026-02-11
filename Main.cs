@@ -17,21 +17,21 @@ public class PowerToys : IAsyncPlugin, IContextMenu, IAsyncReloadable, IPluginI1
         _launcher = new PowerToysLauncher();
         await _launcher.ApplySettings();
     }
-    
+
     public async Task<List<Result>> QueryAsync(Query query, CancellationToken token)
     {
         if (!_launcher.IsPowerToysRunning())
         {
-            return [new Result{Title = GetTranslation("powertoys_not_running"), SubTitle = GetTranslation("powertoys_not_running_subtitle") }];
+            return [new Result { Title = GetTranslation("powertoys_not_running"), SubTitle = GetTranslation("powertoys_not_running_subtitle") }];
         }
-        if(string.IsNullOrWhiteSpace(query.Search))
+        if (string.IsNullOrWhiteSpace(query.Search))
         {
             return _launcher.EnabledActions.Select(MapActionToResult).ToList();
         }
         // Split search string, segment by spaces (ignore empty string)
         var searchTerms = query.Search.ToLower().Split([" "], System.StringSplitOptions.RemoveEmptyEntries);
-        var filteredResults = _launcher.EnabledActions.Where(x => searchTerms.All(term => x.Keywords.Any(keyword => keyword.Contains(term))));
-        if(filteredResults.Any())
+        var filteredResults = _launcher.EnabledActions.Where(x => searchTerms.All(term => x.Keywords.Any(keyword => keyword.Contains(term))) || _context.API.FuzzySearch(query.Search, GetTranslation(x.TitleKey)).Success);
+        if (filteredResults.Any())
         {
             return filteredResults.Select(MapActionToResult).ToList();
         }
@@ -42,7 +42,7 @@ public class PowerToys : IAsyncPlugin, IContextMenu, IAsyncReloadable, IPluginI1
     {
         return new Result
         {
-            Action =  _ =>  { action.Execute(); return true; },
+            Action = _ => { action.Execute(); return true; },
             Title = GetTranslation(action.TitleKey),
             SubTitle = action.Keywords.Any() ? GetTranslation("keywords") + ": " + string.Join(" ", action.Keywords) : string.Empty,
             IcoPath = GetIconPath(action.Icon),
