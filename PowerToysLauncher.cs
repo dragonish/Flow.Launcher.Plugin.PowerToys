@@ -43,6 +43,7 @@ public static class Events
     public const string ZoomItLiveZoomEvent = "Local\\PowerToysZoomIt-LiveZoomEvent-390bf0c7-616f-47dc-bafe-a2d228add20d";
     public const string ZoomItSnipEvent = "Local\\PowerToysZoomIt-SnipEvent-2fd9c211-436d-4f17-a902-2528aaae3e30";
     public const string ZoomItRecordEvent = "Local\\PowerToysZoomIt-RecordEvent-74539344-eaad-4711-8e83-23946e424512";
+    public const string OpenNewKeyboardManagerEvent = "Local\\PowerToysOpenNewKeyboardManagerEvent-9c1d2e3f-4b5a-6c7d-8e9f-0a1b2c3d4e5f";
 }
 
 public class PowerToysLauncher
@@ -336,6 +337,14 @@ public class PowerToysLauncher
              TitleKey = "zoomit_record",
              Icon = "ZoomIt.png",
              SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+            EventKey = Events.OpenNewKeyboardManagerEvent,
+            Keywords = ["keyboard", "manager"],
+            TitleKey = "open_new_keyboard_manager",
+            Icon = "KeyboardManager.png",
+            SettingsLinkName = "KBM",
+            SettingsEnabledNameOverride = "Keyboard Manager",
         },
         new OpenPowerToysSettingsAction
         {

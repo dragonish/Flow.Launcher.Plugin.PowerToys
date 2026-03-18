@@ -44,4 +44,5 @@
     <system:String x:Key="zoomit_live_zoom">ZoomIt Live Zoom</system:String>
     <system:String x:Key="zoomit_snip">ZoomIt Snip</system:String>
     <system:String x:Key="zoomit_record">ZoomIt Record</system:String>
+    <system:String x:Key="open_new_keyboard_manager">Open New Keyboard Manager</system:String>
 </ResourceDictionary>

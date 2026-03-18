@@ -44,4 +44,5 @@
     <system:String x:Key="zoomit_live_zoom">ZoomIt 实时缩放</system:String>
     <system:String x:Key="zoomit_snip">ZoomIt 截图</system:String>
     <system:String x:Key="zoomit_record">ZoomIt 录制</system:String>
+    <system:String x:Key="open_new_keyboard_manager">打开新键盘管理器</system:String>
 </ResourceDictionary>

@@ -29,6 +29,7 @@ Heavily based on / inspired by the similar plugin for PowerToys Run.
 - Cursor Wrap
 - Light Switch Toggle
 - ZoomIt
+- Keyboard Manager
 - PowerToys Settings
 
 ## Other Features
