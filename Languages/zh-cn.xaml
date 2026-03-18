@@ -45,4 +45,6 @@
     <system:String x:Key="zoomit_snip">ZoomIt 截图</system:String>
     <system:String x:Key="zoomit_record">ZoomIt 录制</system:String>
     <system:String x:Key="open_new_keyboard_manager">打开新键盘管理器</system:String>
+    <system:String x:Key="toggle_easy_mouse">切换 Easy Mouse</system:String>
+    <system:String x:Key="reconnect_mouse">重新连接无界鼠标</system:String>
 </ResourceDictionary>

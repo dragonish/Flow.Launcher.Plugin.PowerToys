@@ -30,6 +30,7 @@ Heavily based on / inspired by the similar plugin for PowerToys Run.
 - Light Switch Toggle
 - ZoomIt
 - Keyboard Manager
+- MouseWithoutBorders
 - PowerToys Settings
 
 ## Other Features

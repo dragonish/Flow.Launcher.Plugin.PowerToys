@@ -44,6 +44,8 @@ public static class Events
     public const string ZoomItSnipEvent = "Local\\PowerToysZoomIt-SnipEvent-2fd9c211-436d-4f17-a902-2528aaae3e30";
     public const string ZoomItRecordEvent = "Local\\PowerToysZoomIt-RecordEvent-74539344-eaad-4711-8e83-23946e424512";
     public const string OpenNewKeyboardManagerEvent = "Local\\PowerToysOpenNewKeyboardManagerEvent-9c1d2e3f-4b5a-6c7d-8e9f-0a1b2c3d4e5f";
+    public const string ToggleEasyMouseEvent = "Local\\PowerToysMWB-ToggleEasyMouseEvent-a9c8d7b6-e5f4-3c2a-1b0d-9e8f7a6b5c4d";
+    public const string ReconnectEvent = "Local\\PowerToysMWB-ReconnectEvent-b8d7c6a5-f4e3-2b1c-0a9d-8e7f6a5b4c3d";
 }
 
 public class PowerToysLauncher
@@ -344,7 +346,21 @@ public class PowerToysLauncher
             TitleKey = "open_new_keyboard_manager",
             Icon = "KeyboardManager.png",
             SettingsLinkName = "KBM",
-            SettingsEnabledNameOverride = "Keyboard Manager",
+            SettingsEnabledNameOverride = "Keyboard Manager"
+        },
+        new PowerToysUtilityActionWithSettings {
+            EventKey = Events.ToggleEasyMouseEvent,
+            Keywords = ["toggle", "easy", "mouse"],
+            TitleKey = "toggle_easy_mouse",
+            Icon = "MouseWithoutBorders.png",
+            SettingsLinkName = "MouseWithoutBorders"
+        },
+        new PowerToysUtilityActionWithSettings {
+            EventKey = Events.ReconnectEvent,
+            Keywords = ["reconnect", "mouse"],
+            TitleKey = "reconnect_mouse",
+            Icon = "MouseWithoutBorders.png",
+            SettingsLinkName = "MouseWithoutBorders"
         },
         new OpenPowerToysSettingsAction
         {
