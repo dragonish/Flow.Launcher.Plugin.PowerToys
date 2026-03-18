@@ -6,7 +6,7 @@
   "Author": "PederBirk",
   "Version": "1.2.0",
   "Language": "csharp",
-  "Website": "https://github.com/PederBirk/Flow.Launcher.Plugin.PowerToys",
+  "Website": "https://github.com/dragonish/Flow.Launcher.Plugin.PowerToys",
   "IcoPath": "images/PowerToys.png",
   "ExecuteFileName": "Flow.Launcher.Plugin.PowerToys.dll"
 }
