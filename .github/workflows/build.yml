@@ -59,4 +59,4 @@ jobs:
           message: 'Build ${{ steps.git_tags.outputs.current }}'
           tags: 'GitHub,building_construction,${{ job.status }}'
           priority: 2
-          click: 'https://github.com/${{ github.repository }}'
+          click: 'https://github.com/${{ github.repository }}/releases/tag/${{ steps.git_tags.outputs.current }}'
