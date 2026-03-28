@@ -12,6 +12,10 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    env:
+      NTFY_URL: ${{ secrets.NTFY_URL }}
+      NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
 
     steps:
       - uses: actions/checkout@v6
