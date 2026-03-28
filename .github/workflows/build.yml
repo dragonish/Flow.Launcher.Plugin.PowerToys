@@ -43,3 +43,16 @@ jobs:
           tag_name: ${{ steps.git_tags.outputs.current }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Send notification
+        if: ${{ !cancelled() && env.NTFY_URL != '' && env.NTFY_TOKEN != '' && env.NTFY_TOPIC != '' }}
+        uses: dragonish/send-to-ntfy@v1
+        with:
+          base-url: ${{ secrets.NTFY_URL }}
+          topic: ${{ secrets.NTFY_TOPIC }}
+          access-token: ${{ secrets.NTFY_TOKEN }}
+          title: ${{ github.repository }}
+          message: 'Build ${{ steps.git_tags.outputs.current }}'
+          tags: 'GitHub,building_construction,${{ job.status }}'
+          priority: 2
+          click: 'https://github.com/${{ github.repository }}'
