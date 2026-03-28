@@ -42,6 +42,7 @@ public static class Events
     public const string ZoomItBreakEvent = "Local\\PowerToysZoomIt-BreakEvent-17f2e63c-4c56-41dd-90a0-2d12f9f50c6b";
     public const string ZoomItLiveZoomEvent = "Local\\PowerToysZoomIt-LiveZoomEvent-390bf0c7-616f-47dc-bafe-a2d228add20d";
     public const string ZoomItSnipEvent = "Local\\PowerToysZoomIt-SnipEvent-2fd9c211-436d-4f17-a902-2528aaae3e30";
+    public const string ZoomItSnipOcrEvent = "Local\\PowerToysZoomIt-SnipOcrEvent-a7c3b1d2-9e4f-4a6b-8d5c-1f2e3a4b5c6d";
     public const string ZoomItRecordEvent = "Local\\PowerToysZoomIt-RecordEvent-74539344-eaad-4711-8e83-23946e424512";
     public const string OpenNewKeyboardManagerEvent = "Local\\PowerToysOpenNewKeyboardManagerEvent-9c1d2e3f-4b5a-6c7d-8e9f-0a1b2c3d4e5f";
     public const string ToggleEasyMouseEvent = "Local\\PowerToysMWB-ToggleEasyMouseEvent-a9c8d7b6-e5f4-3c2a-1b0d-9e8f7a6b5c4d";
@@ -330,6 +331,13 @@ public class PowerToysLauncher
              EventKey = Events.ZoomItSnipEvent,
              Keywords = ["zoomit", "snip"],
              TitleKey = "zoomit_snip",
+             Icon = "ZoomIt.png",
+             SettingsLinkName = "ZoomIt"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.ZoomItSnipOcrEvent,
+             Keywords = ["zoomit", "snip", "ocr"],
+             TitleKey = "zoomit_snip_ocr",
              Icon = "ZoomIt.png",
              SettingsLinkName = "ZoomIt"
         },

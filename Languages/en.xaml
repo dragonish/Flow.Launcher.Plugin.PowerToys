@@ -43,6 +43,7 @@
     <system:String x:Key="zoomit_break">ZoomIt Break</system:String>
     <system:String x:Key="zoomit_live_zoom">ZoomIt Live Zoom</system:String>
     <system:String x:Key="zoomit_snip">ZoomIt Snip</system:String>
+    <system:String x:Key="zoomit_snip_ocr">ZoomIt Snip OCR</system:String>
     <system:String x:Key="zoomit_record">ZoomIt Record</system:String>
     <system:String x:Key="open_new_keyboard_manager">Open New Keyboard Manager</system:String>
     <system:String x:Key="toggle_easy_mouse">Toggle Easy Mouse</system:String>
