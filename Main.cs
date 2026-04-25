@@ -88,6 +88,11 @@ public class PowerToys : IAsyncPlugin, IContextMenu, IAsyncReloadable, IPluginI1
 
         if (!File.Exists(iconPath))
         {
+            iconPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "scoop\\apps\\powertoys\\current\\", relativePath);
+        }
+
+        if (!File.Exists(iconPath))
+        {
             return "https://cdn.jsdelivr.net/gh/microsoft/PowerToys/src/settings-ui/Settings.UI/Assets/Settings/Icons/" + iconName;
         }
 
