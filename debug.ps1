@@ -7,15 +7,38 @@ if (Test-Path $flowLauncherExe) {
     Stop-Process -Name "Flow.Launcher" -Force -ErrorAction SilentlyContinue
     Start-Sleep -Seconds 2
 
-    if (Test-Path "$AppDataFolder\FlowLauncher\Plugins\PowerToys") {
-        Remove-Item -Recurse -Force "$AppDataFolder\FlowLauncher\Plugins\PowerToys"
+    $pluginDir = "$AppDataFolder\FlowLauncher\Plugins"
+    $pluginPath = "$pluginDir\PowerToys"
+
+    if (Test-Path "$pluginPath") {
+        Remove-Item -Recurse -Force "$pluginPath"
     }
 
-    Copy-Item "bin\Debug\win-x64\publish" "$AppDataFolder\FlowLauncher\Plugins\" -Recurse -Force
-    Rename-Item -Path "$AppDataFolder\FlowLauncher\Plugins\publish" -NewName "PowerToys"
+    Copy-Item "bin\Debug\win-x64\publish" "$pluginDir\" -Recurse -Force
+    Rename-Item -Path "$pluginDir\publish" -NewName "PowerToys"
 
     Start-Sleep -Seconds 2
     Start-Process $flowLauncherExe
 } else {
-    Write-Host "Flow.Launcher.exe not found. Please install Flow Launcher first"
+    $flowLauncherExe = "$env:USERPROFILE\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
+    if (Test-Path $flowLauncherExe) {
+        Stop-Process -Name "Flow.Launcher" -Force -ErrorAction SilentlyContinue
+        Start-Sleep -Seconds 2
+
+        $pluginDir = "$env:USERPROFILE\scoop\persist\flow-launcher\UserData\Plugins"
+        $pluginPath = "$pluginDir\PowerToys"
+
+        if (Test-Path "$pluginPath") {
+            Remove-Item -Recurse -Force "$pluginPath"
+        }
+
+        Copy-Item "bin\Debug\win-x64\publish" "$pluginDir\" -Recurse -Force
+        Rename-Item -Path "$pluginDir\publish" -NewName "PowerToys"
+
+        Start-Sleep -Seconds 2
+        Start-Process $flowLauncherExe
+    }
+    else {
+        Write-Host "Flow.Launcher.exe not found. Please install Flow Launcher first"
+    }
 }
