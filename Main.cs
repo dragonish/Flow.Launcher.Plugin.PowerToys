@@ -88,7 +88,8 @@ public class PowerToys : IAsyncPlugin, IContextMenu, IAsyncReloadable, IPluginI1
 
         if (!File.Exists(iconPath))
         {
-            iconPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "scoop\\apps\\powertoys\\current\\", relativePath);
+            var scoopRelativePath = "WinUI3Apps\\Assets\\Settings\\Icons\\" + iconName;
+            iconPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "scoop\\apps\\powertoys\\current\\", scoopRelativePath);
         }
 
         if (!File.Exists(iconPath))
