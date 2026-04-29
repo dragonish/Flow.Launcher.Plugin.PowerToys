@@ -229,127 +229,127 @@ public class PowerToysLauncher
             SettingsLinkName = "Awake",
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.AdvancedPasteShowUIEvent,
-             Keywords = ["advanced", "paste"],
-             TitleKey = "advanced_paste_show_ui",
-             Icon = "AdvancedPaste.png",
-             SettingsLinkName = "AdvancedPaste"
+            EventKey = Events.AdvancedPasteShowUIEvent,
+            Keywords = ["advanced", "paste"],
+            TitleKey = "advanced_paste_show_ui",
+            Icon = "AdvancedPaste.png",
+            SettingsLinkName = "AdvancedPaste"
         },
         new DelayedPowerToysUtilityAction {
-             EventKey = Events.FindMyMouseTriggerEvent,
-             Keywords = ["find", "mouse"],
-             TitleKey = "find_my_mouse",
-             Icon = "FindMyMouse.png",
-             SettingsLinkName = "MouseUtils",
-             SettingsEnabledNameOverride = "FindMyMouse"
+            EventKey = Events.FindMyMouseTriggerEvent,
+            Keywords = ["find", "mouse"],
+            TitleKey = "find_my_mouse",
+            Icon = "FindMyMouse.png",
+            SettingsLinkName = "MouseUtils",
+            SettingsEnabledNameOverride = "FindMyMouse"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.MouseHighlighterTriggerEvent,
-             Keywords = ["mouse", "highlighter"],
-             TitleKey = "mouse_highlighter",
-             Icon = "MouseHighlighter.png",
-             SettingsLinkName = "MouseUtils",
-             SettingsEnabledNameOverride = "MouseHighlighter"
+            EventKey = Events.MouseHighlighterTriggerEvent,
+            Keywords = ["mouse", "highlighter"],
+            TitleKey = "mouse_highlighter",
+            Icon = "MouseHighlighter.png",
+            SettingsLinkName = "MouseUtils",
+            SettingsEnabledNameOverride = "MouseHighlighter"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.MouseCrosshairsTriggerEvent,
-             Keywords = ["mouse", "crosshairs"],
-             TitleKey = "mouse_crosshairs",
-             Icon = "MouseCrosshairs.png",
-             SettingsLinkName = "MouseUtils",
-             SettingsEnabledNameOverride = "MousePointerCrosshairs"
+            EventKey = Events.MouseCrosshairsTriggerEvent,
+            Keywords = ["mouse", "crosshairs"],
+            TitleKey = "mouse_crosshairs",
+            Icon = "MouseCrosshairs.png",
+            SettingsLinkName = "MouseUtils",
+            SettingsEnabledNameOverride = "MousePointerCrosshairs"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.CursorWrapTriggerEvent,
-             Keywords = ["cursor", "wrap"],
-             TitleKey = "cursor_wrap",
-             Icon = "CursorWrap.png",
-             SettingsLinkName = "MouseUtils",
-             SettingsEnabledNameOverride = "CursorWrap"
+            EventKey = Events.CursorWrapTriggerEvent,
+            Keywords = ["cursor", "wrap"],
+            TitleKey = "cursor_wrap",
+            Icon = "CursorWrap.png",
+            SettingsLinkName = "MouseUtils",
+            SettingsEnabledNameOverride = "CursorWrap"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.LightSwitchToggleEvent,
-             Keywords = ["light", "switch", "toggle", "theme"],
-             TitleKey = "light_switch_toggle",
-             Icon = "LightSwitch.png",
-             SettingsLinkName = "LightSwitch"
+            EventKey = Events.LightSwitchToggleEvent,
+            Keywords = ["light", "switch", "toggle", "theme"],
+            TitleKey = "light_switch_toggle",
+            Icon = "LightSwitch.png",
+            SettingsLinkName = "LightSwitch"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.LightSwitchLightThemeEvent,
-             Keywords = ["light", "switch", "light", "theme"],
-             TitleKey = "light_switch_light_theme",
-             Icon = "LightSwitch.png",
-             SettingsLinkName = "LightSwitch"
+            EventKey = Events.LightSwitchLightThemeEvent,
+            Keywords = ["light", "switch", "light", "theme"],
+            TitleKey = "light_switch_light_theme",
+            Icon = "LightSwitch.png",
+            SettingsLinkName = "LightSwitch"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.LightSwitchDarkThemeEvent,
-             Keywords = ["light", "switch", "dark", "theme"],
-             TitleKey = "light_switch_dark_theme",
-             Icon = "LightSwitch.png",
-             SettingsLinkName = "LightSwitch"
+            EventKey = Events.LightSwitchDarkThemeEvent,
+            Keywords = ["light", "switch", "dark", "theme"],
+            TitleKey = "light_switch_dark_theme",
+            Icon = "LightSwitch.png",
+            SettingsLinkName = "LightSwitch"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItRefreshSettingsEvent,
-             Keywords = ["zoomit", "refresh", "settings"],
-             TitleKey = "zoomit_refresh_settings",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItRefreshSettingsEvent,
+            Keywords = ["zoomit", "refresh", "settings"],
+            TitleKey = "zoomit_refresh_settings",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItExitEvent,
-             Keywords = ["zoomit", "exit"],
-             TitleKey = "zoomit_exit",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItExitEvent,
+            Keywords = ["zoomit", "exit"],
+            TitleKey = "zoomit_exit",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItZoomEvent,
-             Keywords = ["zoomit", "zoom"],
-             TitleKey = "zoomit_zoom",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItZoomEvent,
+            Keywords = ["zoomit", "zoom"],
+            TitleKey = "zoomit_zoom",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItDrawEvent,
-             Keywords = ["zoomit", "draw"],
-             TitleKey = "zoomit_draw",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItDrawEvent,
+            Keywords = ["zoomit", "draw"],
+            TitleKey = "zoomit_draw",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItBreakEvent,
-             Keywords = ["zoomit", "break"],
-             TitleKey = "zoomit_break",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItBreakEvent,
+            Keywords = ["zoomit", "break"],
+            TitleKey = "zoomit_break",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItLiveZoomEvent,
-             Keywords = ["zoomit", "live", "zoom"],
-             TitleKey = "zoomit_live_zoom",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItLiveZoomEvent,
+            Keywords = ["zoomit", "live", "zoom"],
+            TitleKey = "zoomit_live_zoom",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItSnipEvent,
-             Keywords = ["zoomit", "snip"],
-             TitleKey = "zoomit_snip",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItSnipEvent,
+            Keywords = ["zoomit", "snip"],
+            TitleKey = "zoomit_snip",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItSnipOcrEvent,
-             Keywords = ["zoomit", "snip", "ocr"],
-             TitleKey = "zoomit_snip_ocr",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItSnipOcrEvent,
+            Keywords = ["zoomit", "snip", "ocr"],
+            TitleKey = "zoomit_snip_ocr",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.ZoomItRecordEvent,
-             Keywords = ["zoomit", "record"],
-             TitleKey = "zoomit_record",
-             Icon = "ZoomIt.png",
-             SettingsLinkName = "ZoomIt"
+            EventKey = Events.ZoomItRecordEvent,
+            Keywords = ["zoomit", "record"],
+            TitleKey = "zoomit_record",
+            Icon = "ZoomIt.png",
+            SettingsLinkName = "ZoomIt"
         },
         new PowerToysUtilityActionWithSettings {
             EventKey = Events.OpenNewKeyboardManagerEvent,
@@ -374,25 +374,25 @@ public class PowerToysLauncher
             SettingsLinkName = "MouseWithoutBorders"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.PowerDisplayToggleEvent,
-             Keywords = ["display", "tooggle"],
-             TitleKey = "power_display_tooggle",
-             Icon = "PowerDisplay.png",
-             SettingsLinkName = "PowerDisplay"
+            EventKey = Events.PowerDisplayToggleEvent,
+            Keywords = ["display", "tooggle"],
+            TitleKey = "power_display_tooggle",
+            Icon = "PowerDisplay.png",
+            SettingsLinkName = "PowerDisplay"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.PowerDisplayTerminateEvent,
-             Keywords = ["display", "terminate"],
-             TitleKey = "power_display_terminate",
-             Icon = "PowerDisplay.png",
-             SettingsLinkName = "PowerDisplay"
+            EventKey = Events.PowerDisplayTerminateEvent,
+            Keywords = ["display", "terminate"],
+            TitleKey = "power_display_terminate",
+            Icon = "PowerDisplay.png",
+            SettingsLinkName = "PowerDisplay"
         },
         new PowerToysUtilityActionWithSettings {
-             EventKey = Events.PowerDisplayRefreshMonitorsEvent,
-             Keywords = ["display", "refresh", "monitors"],
-             TitleKey = "power_display_refresh_monitors",
-             Icon = "PowerDisplay.png",
-             SettingsLinkName = "PowerDisplay"
+            EventKey = Events.PowerDisplayRefreshMonitorsEvent,
+            Keywords = ["display", "refresh", "monitors"],
+            TitleKey = "power_display_refresh_monitors",
+            Icon = "PowerDisplay.png",
+            SettingsLinkName = "PowerDisplay"
         },
         new OpenPowerToysSettingsAction
         {
