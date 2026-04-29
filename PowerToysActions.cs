@@ -67,6 +67,11 @@ public class OpenPowerToysSettingsAction : IAction
             appPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), relativePath);
         }
 
+        if (!File.Exists(appPath))
+        {
+            appPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "scoop\\apps\\powertoys\\current\\PowerToys.exe");
+        }
+
         if (File.Exists(appPath))
         {
             Process.Start(new ProcessStartInfo(appPath) { Arguments = $"--open-settings={SettingsLinkName}" });
