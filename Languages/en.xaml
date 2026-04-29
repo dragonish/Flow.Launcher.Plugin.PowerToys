@@ -48,4 +48,7 @@
     <system:String x:Key="open_new_keyboard_manager">Open New Keyboard Manager</system:String>
     <system:String x:Key="toggle_easy_mouse">Toggle Easy Mouse</system:String>
     <system:String x:Key="reconnect_mouse">Reconnect Mouse</system:String>
+    <system:String x:Key="power_display_tooggle">Toggle Profile</system:String>
+    <system:String x:Key="power_display_terminate">Terminate Power Display</system:String>
+    <system:String x:Key="power_display_refresh_monitors">Refresh Monitors</system:String>
 </ResourceDictionary>

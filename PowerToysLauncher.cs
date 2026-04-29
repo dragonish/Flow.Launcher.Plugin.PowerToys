@@ -47,6 +47,9 @@ public static class Events
     public const string OpenNewKeyboardManagerEvent = "Local\\PowerToysOpenNewKeyboardManagerEvent-9c1d2e3f-4b5a-6c7d-8e9f-0a1b2c3d4e5f";
     public const string ToggleEasyMouseEvent = "Local\\PowerToysMWB-ToggleEasyMouseEvent-a9c8d7b6-e5f4-3c2a-1b0d-9e8f7a6b5c4d";
     public const string ReconnectEvent = "Local\\PowerToysMWB-ReconnectEvent-b8d7c6a5-f4e3-2b1c-0a9d-8e7f6a5b4c3d";
+    public const string PowerDisplayToggleEvent = "Local\\PowerToysPowerDisplay-ToggleEvent-5f1a9c3e-7d2b-4e8f-9a6c-3b5d7e9f1a2c";
+    public const string PowerDisplayTerminateEvent = "Local\\PowerToysPowerDisplay-TerminateEvent-7b9c2e1f-8a5d-4c3e-9f6b-2a1d8c5e3b7a";
+    public const string PowerDisplayRefreshMonitorsEvent = "Local\\PowerToysPowerDisplay-RefreshMonitorsEvent-a3f5c8e7-9d1b-4e2f-8c6a-3b5d7e9f1a2c";
 }
 
 public class PowerToysLauncher
@@ -369,6 +372,27 @@ public class PowerToysLauncher
             TitleKey = "reconnect_mouse",
             Icon = "MouseWithoutBorders.png",
             SettingsLinkName = "MouseWithoutBorders"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.PowerDisplayToggleEvent,
+             Keywords = ["display", "tooggle"],
+             TitleKey = "power_display_tooggle",
+             Icon = "PowerDisplay.png",
+             SettingsLinkName = "PowerDisplay"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.PowerDisplayTerminateEvent,
+             Keywords = ["display", "terminate"],
+             TitleKey = "power_display_terminate",
+             Icon = "PowerDisplay.png",
+             SettingsLinkName = "PowerDisplay"
+        },
+        new PowerToysUtilityActionWithSettings {
+             EventKey = Events.PowerDisplayRefreshMonitorsEvent,
+             Keywords = ["display", "refresh", "monitors"],
+             TitleKey = "power_display_refresh_monitors",
+             Icon = "PowerDisplay.png",
+             SettingsLinkName = "PowerDisplay"
         },
         new OpenPowerToysSettingsAction
         {

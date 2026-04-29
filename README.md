@@ -31,6 +31,7 @@ Heavily based on / inspired by the similar plugin for PowerToys Run.
 - ZoomIt
 - Keyboard Manager
 - MouseWithoutBorders
+- Power Display
 - PowerToys Settings
 
 ## Other Features
