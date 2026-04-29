@@ -51,4 +51,5 @@
     <system:String x:Key="power_display_tooggle">Toggle Profile</system:String>
     <system:String x:Key="power_display_terminate">Terminate Power Display</system:String>
     <system:String x:Key="power_display_refresh_monitors">Refresh Monitors</system:String>
+    <system:String x:Key="grab_and_move_exit">Exit Grab And Move</system:String>
 </ResourceDictionary>

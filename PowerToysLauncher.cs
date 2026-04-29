@@ -50,6 +50,7 @@ public static class Events
     public const string PowerDisplayToggleEvent = "Local\\PowerToysPowerDisplay-ToggleEvent-5f1a9c3e-7d2b-4e8f-9a6c-3b5d7e9f1a2c";
     public const string PowerDisplayTerminateEvent = "Local\\PowerToysPowerDisplay-TerminateEvent-7b9c2e1f-8a5d-4c3e-9f6b-2a1d8c5e3b7a";
     public const string PowerDisplayRefreshMonitorsEvent = "Local\\PowerToysPowerDisplay-RefreshMonitorsEvent-a3f5c8e7-9d1b-4e2f-8c6a-3b5d7e9f1a2c";
+    public const string GrabAndMoveExitEvent = "Local\\PowerToysGrabAndMove-ExitEvent-b8c4d2e3-5f6a-7b8c-9d0e-1f2a3b4c5d6e";
 }
 
 public class PowerToysLauncher
@@ -393,6 +394,13 @@ public class PowerToysLauncher
             TitleKey = "power_display_refresh_monitors",
             Icon = "PowerDisplay.png",
             SettingsLinkName = "PowerDisplay"
+        },
+        new PowerToysUtilityActionWithSettings {
+            EventKey = Events.GrabAndMoveExitEvent,
+            Keywords = ["grab", "move", "exit"],
+            TitleKey = "grab_and_move_exit",
+            Icon = "GrabAndMove.png",
+            SettingsLinkName = "GrabAndMove"
         },
         new OpenPowerToysSettingsAction
         {

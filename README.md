@@ -32,6 +32,7 @@ Heavily based on / inspired by the similar plugin for PowerToys Run.
 - Keyboard Manager
 - MouseWithoutBorders
 - Power Display
+- Grab And Move
 - PowerToys Settings
 
 ## Other Features
