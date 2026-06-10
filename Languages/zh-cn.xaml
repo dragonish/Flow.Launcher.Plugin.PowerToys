@@ -51,5 +51,6 @@
     <system:String x:Key="power_display_tooggle">切换配置文件</system:String>
     <system:String x:Key="power_display_terminate">终止 Power Display</system:String>
     <system:String x:Key="power_display_refresh_monitors">刷新监视器</system:String>
+    <system:String x:Key="power_display_rescan_monitors">重新扫描监视器</system:String>
     <system:String x:Key="grab_and_move_exit">停用抓取并移动</system:String>
 </ResourceDictionary>
