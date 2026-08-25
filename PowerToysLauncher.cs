@@ -15,6 +15,7 @@ public static class Events
     public const string ShowHostsAdminEvent = "Local\\Hosts-ShowHostsAdminEvent-60ff44e2-efd3-43bf-928a-f4d269f98bec";
     public const string MeasureToolTriggerEvent = "Local\\MeasureToolEvent-3d46745f-09b3-4671-a577-236be7abd199";
     public const string ShortcutGuideTriggerEvent = "Local\\ShortcutGuide-TriggerEvent-d4275ad3-2531-4d19-9252-c0becbd9b496";
+    public const string ShortcutGuideWinKeyHoldEvent = "Local\\ShortcutGuide-WinKeyHoldEvent-b5eb7614-d1c4-49d7-9813-ab277aabdd80";
     public const string RegistryPreviewTriggerEvent = "Local\\RegistryPreviewEvent-4C559468-F75A-4E7F-BC4F-9C9688316687";
     public const string CropAndLockThumbnailEvent = "Local\\PowerToysCropAndLockThumbnailEvent-1637be50-da72-46b2-9220-b32b206b2434";
     public const string CropAndLockReparentEvent = "Local\\PowerToysCropAndLockReparentEvent-6060860a-76a1-44e8-8d0e-6355785e9c36";
@@ -94,6 +95,15 @@ public class PowerToysLauncher
             EventKey = Events.ShortcutGuideTriggerEvent,
             Keywords = ["shortcut", "guide"],
             TitleKey = "shortcut_guide",
+            Icon = "ShortcutGuide.png",
+            SettingsLinkName = "ShortcutGuide",
+            SettingsEnabledNameOverride = "Shortcut Guide"
+        },
+        new PowerToysUtilityActionWithSettings
+        {
+            EventKey = Events.ShortcutGuideWinKeyHoldEvent,
+            Keywords = ["shortcut", "guide", "win", "key", "hold"],
+            TitleKey = "shortcut_guide_win_key_hold",
             Icon = "ShortcutGuide.png",
             SettingsLinkName = "ShortcutGuide",
             SettingsEnabledNameOverride = "Shortcut Guide"

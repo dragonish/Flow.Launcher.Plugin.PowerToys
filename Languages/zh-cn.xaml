@@ -12,6 +12,7 @@
     <system:String x:Key="settings">打开 PowerToys 设置</system:String>
     <system:String x:Key="screen_ruler">屏幕标尺</system:String>
     <system:String x:Key="shortcut_guide">快捷键指南</system:String>
+    <system:String x:Key="shortcut_guide_win_key_hold">触发按住 Win 键</system:String>
     <system:String x:Key="color_picker">显示颜色选取器</system:String>
     <system:String x:Key="always_on_top_pin">保持窗口始终置顶</system:String>
     <system:String x:Key="always_on_top_increase_opacity">增加已置顶窗口边框不透明度</system:String>

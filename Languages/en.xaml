@@ -12,6 +12,7 @@
 	<system:String x:Key="settings">Open PowerToys Settings</system:String>
 	<system:String x:Key="screen_ruler">Screen Ruler</system:String>
 	<system:String x:Key="shortcut_guide">Shortcut Guide</system:String>
+    <system:String x:Key="shortcut_guide_win_key_hold">Trigger Hold The Win Key</system:String>
 	<system:String x:Key="color_picker">Show Color Picker</system:String>
 	<system:String x:Key="always_on_top_pin">Pin Always On Top</system:String>
     <system:String x:Key="always_on_top_increase_opacity">Increases Opacity Of Top Window Border</system:String>
